@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(blue, yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img{
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+header img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+header label{
+    display: none;
+}
+
+header input{
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: blue;
+    font-weight: 1000;
+}
+
+header nav ul li a:hover{
+    color: yellow;
+    transition: 1s;
+    text-decoration: underline;
+    
+}
+
+.hero{
+    height: calc(100vh - 84.06px);
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    color: yellow;
+    font-size: 3em;
+    border: 2px yellow solid;
+    padding: 0.5em;
+}
+
+.hero input{
+    margin-top: 1em;
+    border-radius: 50%;
+    padding: 1em;
+    color: yellow;
+    background-color: blue;
+}
+
+.hero input:hover{
+    background-color: yellow;
+    color: blue;
+    transition: 1s;
+}
+
+.nosotros{
+    background: linear-gradient(blue,yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+    position: relative;
+}
+
+.parrafo{
+    width: 50%;
+    font-size: 2em;
+}
+
+.nosotros div img{
+    opacity: 0.8;
+
+}
+
+.texto{
+    position: absolute;
+    top: 345px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    width: 22%;
+}
+
+.historia{
+    background: linear-gradient(blue, yellow);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.historia img{
+    opacity: 0.8;
+}
+
+.texto2{
+    position: absolute;
+    top: 230px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    width: 22%;
+}
+
+.productos{
+    background: linear-gradient(blue,yellow);
+}
+
+.contenedor-general-productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.separador{
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.contenedor-general-productos div{
+    border: 2px black solid;
+    text-align: center;
+    box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    margin: 2em;
+}
+
+.contenedor-general-productos div input{
+    margin-bottom: 1em;
+}
+
+.contenedor-general-productos div:hover{
+   transform: scale(1.1);
+   transition: 2s;
+}
+
+.contacto{
+    background: linear-gradient(blue, yellow);
+}
+
+.contenedor-general-contacto{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-general-contacto div{
+    margin: 2em;
+}
+
+.modo-claro{
+    background-color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    width: 85%;
+}
+
+.modo-oscuro{
+    background-color: black;
+    color: orange;
+    padding: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    width: 85%;
+}
+.contenedor-general-contacto div form div{
+   margin: 0.7em;
+}
+
+.contenedor-general-contacto div form:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer{
+    background: linear-gradient(blue, yellow);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+footer img{
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+footer div ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer div ul li{
+    margin: 0.5em;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 1000;
+}
+
+footer p{
+    color: blue;
+    font-weight: 1000;
+}
+
+@media screen and (max-width:550px) {
+    header{
+        position: static;
+    }
+
+    header nav ul li a:hover{
+        color: blueviolet;
+    }
+
+    .menu-navegacion{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1000;
+        top: 20%;
+        left: 50%;
+        background-color: yellow;
+    }
+
+    .boton{
+        display: block;
+        color: blue;
+        font-size: 1.5em;
+        
+    }
+
+    #boton:checked ~ nav .menu-navegacion{
+        display: flex;
+    }
+
+    .hero{
+        h1{
+            font-size: 2em;
+        }
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .texto, .texto2{
+        display: none;
+    }
+
+    .nosotros div img{
+        width: 100%;
+    }
+
+    .parrafo{
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .historia{
+        flex-direction: column;
+    }
+
+    .historia div img{
+        width: 100%;
+    }
+
+    .contacto iframe{
+        width: 100%;
+    }
+
+    .contacto div form{
+       width: 100%;
+       padding: 0.2em;
+    }
+    
+}
